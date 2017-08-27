@@ -1,3 +1,4 @@
+import { ShoppingItem } from './../../models/shopping-item/shopping-item.interface';
 import { AddShoppingPage } from './../add-shopping/add-shopping';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
