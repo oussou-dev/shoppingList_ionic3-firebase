@@ -47,11 +47,9 @@ Substitute ios for android if not on a Mac.
 <br>
 <img src="https://github.com/oussou-dev/shoppingList_ionic3-firebase/blob/master/screenshot-2.png" width="400">
 
-
 * EDIT VIEW
 <br>
 <img src="https://github.com/oussou-dev/shoppingList_ionic3-firebase/blob/master/screenshot-3.png" width="400">
-
 
 * FIREBASE VIEW
 <br>
