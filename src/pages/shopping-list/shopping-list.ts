@@ -1,3 +1,4 @@
+import { EditShoppingItemPage } from './../edit-shopping-item/edit-shopping-item';
 import { ShoppingItem } from './../../models/shopping-item/shopping-item.interface';
 import { AddShoppingPage } from './../add-shopping/add-shopping';
 import { Component } from '@angular/core';
@@ -54,7 +55,7 @@ export class ShoppingListPage {
           text: 'Edit',
           handler: () => {
             // Send the user to the EditShoppingItemPage and pass the key as a parameter
-
+            this.navCtrl.push(EditShoppingItemPage, {shoppingItemId: shoppingItem.$key});
           }
         },
         {

@@ -1,3 +1,4 @@
+import { EditShoppingItemPage } from './../pages/edit-shopping-item/edit-shopping-item';
 import {AngularFireDatabaseModule} from 'angularfire2/database';
 import { AddShoppingPage } from './../pages/add-shopping/add-shopping';
 import { FIREBASE_CREDENTIALS } from './firebase.credentials';
@@ -17,7 +18,8 @@ import { ShoppingListPage } from '../pages/shopping-list/shopping-list';
   declarations: [
     MyApp,
     ShoppingListPage,
-    AddShoppingPage
+    AddShoppingPage,
+    EditShoppingItemPage
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import { ShoppingListPage } from '../pages/shopping-list/shopping-list';
   entryComponents: [
     MyApp,
     ShoppingListPage,
-    AddShoppingPage
+    AddShoppingPage,
+    EditShoppingItemPage
   ],
   providers: [
     StatusBar,
