@@ -3,6 +3,9 @@ import { AddShoppingPage } from './../add-shopping/add-shopping';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import {AngularFireDatabase, FirebaseListObservable} from 'angularfire2/database';
+
+
 /**
  * Generated class for the ShoppingListPage page.
  *
@@ -17,12 +20,27 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ShoppingListPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  shoppingListRef$: FirebaseListObservable<ShoppingItem[]>
+
+
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+              private database: AngularFireDatabase) {
+
+    /*
+      Pointing shoppingListRef$ at Firebase -> 'shopping-list' node
+      That means not only can we push things from this reference to the database, but 
+      ALSO we have access to everything inside of that node.
+    */
+    this.shoppingListRef$ = this.database.list('shopping-list');
+
+      // this.shoppingListRef$.subscribe(x => console.log(x));
+      
+
   }
 
  
   navigateToAddShoppingPage() {
-    // NAvigate the user to the AddShoppingPAge
+    // Navigate the user to the AddShoppingPAge
     this.navCtrl.push(AddShoppingPage)
   }
  
