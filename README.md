@@ -1,3 +1,16 @@
+~~~
+Shopping List App with Ionic 3 & Firebase
+
+CRUD application
+~~~
+
+Table of Contents
+-----------------
+
+- [How to use this template](#how-to-use-this-template)
+- [ScreenShots](#screenshots)
+
+
 This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
 
 ## How to use this template
@@ -24,3 +37,22 @@ $ ionic cordova run ios
 
 Substitute ios for android if not on a Mac.
 
+## ScreenShots
+
+* SHOPPING LIST VIEW
+<br>
+<img src="/home/oussou-dev/Bureau/z_projects/Ionic_p/paulhalliday.io/shoppingList_app/screenshot-1.png" width="400">
+
+*  SHOPPING LIST WITH ACTION SHEET VIEW
+<br>
+<img src="/home/oussou-dev/Bureau/z_projects/Ionic_p/paulhalliday.io/shoppingList_app/screenshot-2.png" width="400">
+
+
+* EDIT VIEW
+<br>
+<img src="/home/oussou-dev/Bureau/z_projects/Ionic_p/paulhalliday.io/shoppingList_app/screenshot-3.png" width="400">
+
+
+* FIREBASE VIEW
+<br>
+<img src="/home/oussou-dev/Bureau/z_projects/Ionic_p/paulhalliday.io/shoppingList_app/screenshot-4.png" width="600">
