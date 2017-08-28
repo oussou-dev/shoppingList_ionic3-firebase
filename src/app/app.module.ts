@@ -1,3 +1,4 @@
+import {AngularFireDatabaseModule} from 'angularfire2/database';
 import { AddShoppingPage } from './../pages/add-shopping/add-shopping';
 import { FIREBASE_CREDENTIALS } from './firebase.credentials';
 import {AngularFireModule} from 'angularfire2';
@@ -22,7 +23,9 @@ import { ShoppingListPage } from '../pages/shopping-list/shopping-list';
     BrowserModule,
     IonicModule.forRoot(MyApp),
     // Initialize AngularFire with credentials from the dashboard
-    AngularFireModule.initializeApp(FIREBASE_CREDENTIALS)
+    AngularFireModule.initializeApp(FIREBASE_CREDENTIALS),
+    // Import the AngularFireDatabaseModule to use database
+    AngularFireDatabaseModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
