@@ -41,18 +41,18 @@ Substitute ios for android if not on a Mac.
 
 * SHOPPING LIST VIEW
 <br>
-<img src="/home/oussou-dev/Bureau/z_projects/Ionic_p/paulhalliday.io/shoppingList_app/screenshot-1.png" width="400">
+<img src="https://github.com/oussou-dev/shoppingList_ionic3-firebase/blob/master/screenshot-1.png" width="400">
 
 *  SHOPPING LIST WITH ACTION SHEET VIEW
 <br>
-<img src="/home/oussou-dev/Bureau/z_projects/Ionic_p/paulhalliday.io/shoppingList_app/screenshot-2.png" width="400">
+<img src="https://github.com/oussou-dev/shoppingList_ionic3-firebase/blob/master/screenshot-2.png" width="400">
 
 
 * EDIT VIEW
 <br>
-<img src="/home/oussou-dev/Bureau/z_projects/Ionic_p/paulhalliday.io/shoppingList_app/screenshot-3.png" width="400">
+<img src="https://github.com/oussou-dev/shoppingList_ionic3-firebase/blob/master/screenshot-3.png" width="400">
 
 
 * FIREBASE VIEW
 <br>
-<img src="/home/oussou-dev/Bureau/z_projects/Ionic_p/paulhalliday.io/shoppingList_app/screenshot-4.png" width="600">
+<img src="https://github.com/oussou-dev/shoppingList_ionic3-firebase/blob/master/screenshot-4.png" width="600">
