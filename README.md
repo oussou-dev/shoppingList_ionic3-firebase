@@ -41,11 +41,11 @@ Substitute ios for android if not on a Mac.
 
 * SHOPPING LIST VIEW
 <br>
-<img src="https://github.com/oussou-dev/shoppingList_ionic3-firebase/blob/master/screenshot-1.png" width="400">
+<img src="https://github.com/oussou-dev/shoppingList_ionic3-firebase/blob/master/screenshot-1.png" width="200">
 
 *  SHOPPING LIST WITH ACTION SHEET VIEW
 <br>
-<img src="https://github.com/oussou-dev/shoppingList_ionic3-firebase/blob/master/screenshot-2.png" width="400">
+<img src="https://github.com/oussou-dev/shoppingList_ionic3-firebase/blob/master/screenshot-2.png" width="200">
 
 * EDIT VIEW
 <br>
