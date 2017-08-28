@@ -3,7 +3,7 @@ import { AngularFireDatabase, FirebaseObjectObservable, FirebaseListObservable }
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-
+import {Subscription} from 'rxjs/Subscription'; 
 
 /**
  * Generated class for the EditShoppingItemPage page.
@@ -19,7 +19,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class EditShoppingItemPage {
 
+  shoppingItemSubscription: Subscription;
+
   shoppingItemRef$: FirebaseObjectObservable<ShoppingItem>;
+
+  shoppingItem = {} as ShoppingItem;
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
@@ -31,12 +35,25 @@ export class EditShoppingItemPage {
         console.log(shoppingItemId);
           
 
-
+      // Set the scope of our Firebase Object equel to our NavParams to our selected item
       this.shoppingItemRef$ = this.database.object(`shopping-list/${shoppingItemId}`);
-  }
+      
+      // Subscribe to the Object and assign the result to this.shoppingItem
+      this.shoppingItemSubscription = this.shoppingItemRef$.subscribe(shoppingItem => this.shoppingItem = shoppingItem)
+ 
+    }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad EditShoppingItemPage');
+    editShoppingItem(shoppingItem: ShoppingItem) {
+      // Update our Firebase node with new item data
+      this.shoppingItemRef$.update(shoppingItem);
+
+      // Send the user back to ShoppingListPAge
+      this.navCtrl.pop();
+    }
+
+  ionViewWillLeave() {
+    // Unsubscribe from the Observable when leaving the page
+    this.shoppingItemSubscription.unsubscribe();
   }
 
 }
